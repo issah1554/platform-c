@@ -1,6 +1,6 @@
 # Platform C
 
-Simulated delayed and noisy market-data API returning commodity prices in USD. The `/api/prices` response sometimes omits the optional `volume` field.
+Simulated delayed and noisy market-data API returning commodity prices with TZS and corresponding USD values. The `/api/prices` response sometimes omits the optional `volume` field.
 
 ## Endpoints
 
