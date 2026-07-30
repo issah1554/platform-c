@@ -11,14 +11,14 @@ Simulated delayed and noisy market-data API returning commodity prices in USD. T
 
 ```bash
 npm install
-npm run dev -- --port 3103
+npm run dev
 ```
 
 Then call:
 
 ```bash
-curl http://localhost:3103/api/prices
-curl http://localhost:3103/api/health
+curl http://localhost:3003/api/prices
+curl http://localhost:3003/api/health
 ```
 
 ## Deploying to Vercel

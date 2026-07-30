@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 
+export const TZS_PER_USD = 2600;
+
 export const commodities = [
   { name: "MAIZE", basePrice: 44.1, baseVolume: 1080 },
   { name: "RICE", basePrice: 57.4, baseVolume: 760 },
@@ -34,6 +36,10 @@ export function optionsResponse() {
 export function noisyPrice(basePrice: number) {
   const randomDrift = 1 + (Math.random() - 0.5) * 0.12;
   return Number((basePrice * randomDrift).toFixed(2));
+}
+
+export function toTzs(usdPrice: number) {
+  return Number((usdPrice * TZS_PER_USD).toFixed(2));
 }
 
 export function delayedTimestamp(delayMinutes: number) {
